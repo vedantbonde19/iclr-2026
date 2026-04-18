@@ -436,7 +436,7 @@ class AirFormer(nn.Module):
     def _try_load_weights(self):
         p = os.path.join(os.path.dirname(__file__), "state_dict.pt")
         if os.path.isfile(p):
-            print(f"Loading pretrained weights from {p}")
+            #print(f"Loading pretrained weights from {p}")
             self.load_state_dict(torch.load(p, map_location="cpu", weights_only=True))
 
     def _run_anchor_layer(self, layer, x):
