@@ -1,12 +1,13 @@
 import torch
 
 from models import MLP as Model
+#from models import AirFormer as Model
 
 # The model constructor has to be callable without arguments
 model = Model()
 
 # Dimensions of the data
-BATCH_SIZE = 95  # number of point clouds in the test split
+BATCH_SIZE = 2  # number of point clouds in the test split
 NUM_T_IN = 5  # number of time points in the input
 NUM_T_OUT = 5  # number of time points in the output
 NUM_POS = 100000  # number of points in space
